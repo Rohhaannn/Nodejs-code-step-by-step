@@ -13,9 +13,13 @@ const http = require ('http');
 
 
 //Another syntax
-const dataControl = (req, res) => {
-  res.write("<h1> hello this is Rohan. This testing is with another syntax </h1>")
-  res.end();
-} 
+// const dataControl = (req, res) => {
+//   res.write("<h1> hello this is Rohan. This testing is with another syntax </h1>")
+//   res.end();
+// } 
 
-http.createServer(dataControl).listen(4500);
+// http.createServer(dataControl).listen(4500);
+
+
+const chalk = require('chalk');
+console.log(chalk.blue("this is chalk package"));
