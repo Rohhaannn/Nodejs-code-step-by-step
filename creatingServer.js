@@ -21,5 +21,3 @@ const http = require ('http');
 // http.createServer(dataControl).listen(4500);
 
 
-const chalk = require('chalk');
-console.log(chalk.blue("this is chalk package"));
