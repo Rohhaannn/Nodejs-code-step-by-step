@@ -23,4 +23,4 @@ setTimeout(()=>{
 
 console.log(a+b);
 
-/*actual value we should've get is 30 but will get output as 10. when we assign a = 10 & b = 0, that statement got run first thats  we get answer as 10, but the setTimeout function runs after 2 seconds value of b gets updated but never gets considered in calculation */
+/*actual value we should've get is 30 but will get output as 10. when we assign a = 10 & b = 0, that statement run first thats y we get answer as 10, but the setTimeout function runs after 2 seconds value of b gets updated but never gets considered in calculation */
