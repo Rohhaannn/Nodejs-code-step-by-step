@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 
 //get methods provide route
+
 //creating home page 
 app.get('', (req, res)=>{ // root page or home (by default)
   res.send('<h1> Hello, this is Home page </h1>');
