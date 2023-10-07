@@ -14,3 +14,11 @@ app.get('', (req, res)  =>{
 })
 
 app.listen(6500);
+
+/* Output:
+
+data sent by browser =>>> Rohan
+data sent by browser =>>> peter
+data sent by browser =>>> Ronak
+
+*/
