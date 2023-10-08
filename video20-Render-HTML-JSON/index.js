@@ -21,6 +21,7 @@ app.get('',(req, res)=>{
 
   <br>
   <h1>Welcome, to Home Page</h1>
+  <textarea placeholder="please enter your text here" rows="10" cols="65"> </textarea>
   
   `);
 })
@@ -51,12 +52,12 @@ app.get('/help',(req, res)=>{
     <br>
     <br>
     
-  ,
     {
       name: 'Ronak',
       email: 'ronak@test.com'
-    }`
-  );
+    }
+    
+  `);
 })
 
 //creating other page - Rendering multiple objects (JSON data) by creating an array
