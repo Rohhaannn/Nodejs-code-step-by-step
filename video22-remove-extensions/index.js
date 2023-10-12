@@ -23,7 +23,9 @@ app.get('*',(_, res)=>{
 
 app.listen(8000);
 
-/*
+
+
+/* Interview Questions:
 
 Q. What is 404 page ?
 => 404 page is an error page or special kind of page when user enters a page to access which not exist at that time this page will showed up containing text "Error 404: Page not Found"
