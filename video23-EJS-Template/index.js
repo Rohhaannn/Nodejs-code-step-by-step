@@ -24,7 +24,7 @@ app.set('view engine','ejs');
 // })
 
 app.get('/profile',(_, res)=>{
-  const user = {
+  const user = { //this is the data we can pass dynamically
     name: 'Ronak Sharma',
     email: 'ronak@gmail.com',
     country: 'India',
