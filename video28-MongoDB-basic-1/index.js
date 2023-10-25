@@ -43,9 +43,9 @@ admin>
 
 ==================================================================
 
-
 //Interview Questions:
 Q. what is MongoDB ?
 Q. what is difference between SQL & MongoDB ?
+
 
 */
