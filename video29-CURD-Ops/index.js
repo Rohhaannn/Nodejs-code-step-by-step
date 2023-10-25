@@ -36,7 +36,6 @@ db.products.updateOne({name:"U10"},{$set: {brand:"oppo"}})
 }
 
 
-
 //Interview Questions: video 29
 
 Q. what CRUD operations ?
