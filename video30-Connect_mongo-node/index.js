@@ -14,3 +14,11 @@ async function getData() {
 }
 
 getData();
+
+
+/* Interview Question
+
+Q. Can we connect multiple database like this ?
+Ans: YES. Create same connection with databse name & Collection name and you are done
+
+*/
