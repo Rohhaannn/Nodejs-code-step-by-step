@@ -52,3 +52,9 @@ const result = arr4.filter((item)=>{
   return item > 3
 })
 console.log(result)
+
+//interview  Question
+/* 
+Node js is single threaded or multi-threaded ?
+Ans:- Node js is single threaded.
+*/
