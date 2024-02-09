@@ -1,2 +1,3 @@
-const chalk = require('chalk');
-console.log(chalk.blue("this is chalk package"));
+import chalk from 'chalk';
+
+console.log(chalk.blue('Hello world!'));
