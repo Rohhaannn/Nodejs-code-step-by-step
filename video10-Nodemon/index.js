@@ -2,6 +2,7 @@ console.log('this is trial for nodemon package');
 console.log('I am using it for the first time');
 
 /*
+
 Interview Question:
 
 Q. Nodejs is Async lang or sync language ?
