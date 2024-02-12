@@ -131,3 +131,8 @@ These codes indicate that the client sent an invalid request.
 426 Upgrade Required: Client should upgrade to a newer version of the HTTP protocol.
 
 ===========================================================================================================
+
+Video 13: display files from folder
+
+Q.  Can we get files from another location ?
+=>  No. whenever you run node inside a folder. that acts as a temp web server. whatever files present outside that folder(from which you are running your node) doesn't matter.
