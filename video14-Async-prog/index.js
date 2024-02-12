@@ -1,33 +1,32 @@
 const fs = require('fs');
 const path = require('path');
-const dirPath = path.join(__dirname, 'crud');
+
+const dirPath = path.join(__dirname, 'crud')
 const filePath = `${dirPath}/apple.txt`;
 
 // creating file
-fs.writeFileSync(filePath,'this is a simple text file');
+fs.writeFileSync(filePath, 'this is apple.txt');
 
 // Read File
-fs.readFile(filePath,'utf8', (err, item) => {
+fs.readFile(filePath, (err, item)=>{
   console.log(item);
 })
 
-// update file
-fs.appendFile(filePath, ' and this is apple.txt',(err)=>{
-  if(!err) [
-    console.log("file is Updated")
-  ]
-});
+// Update file
+fs.appendFile(filePath,' and this is a simple text file', (err)=>{
+  if(!err) console.log('file is updated')
+})
 
 // Rename file
 fs.rename(filePath, `${dirPath}/fruit.txt`, (err)=>{
-  if(!err) {
-    console.log("File name is modified");
+  if(!err){
+    console.log('file name is updated');
   }
 })
 
+
 // Delete file
 fs.unlinkSync(`${dirPath}/fruit.txt`);
-
 
 
 /*interview Question:

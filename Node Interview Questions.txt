@@ -136,3 +136,12 @@ Video 13: display files from folder
 
 Q.  Can we get files from another location ?
 =>  No. whenever you run node inside a folder. that acts as a temp web server. whatever files present outside that folder(from which you are running your node) doesn't matter.
+
+===========================================================================================================
+
+Video 14: Asynchronous Programming
+
+what is Buffer ?
+A temporary memory location, wheneverwe run any file node require require a bit memory to perform its operations, which is called Buffer.
+
+===========================================================================================================
