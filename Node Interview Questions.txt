@@ -164,3 +164,12 @@ actual value we should've get is 30 but will get output as 10. when we assign a 
 
 ===========================================================================================================
 
+Video 16 Handle Asynchronous Data
+
+what is Promise: Promise & aysnc-await is way of handling Async data in js. Lets talk about Promises
+
+This is the standard way to handle drawbacks of Asynchronous Programming, we have to create a new Promise as shown in above code, then we put our setTimeout function inside that promise, and pass the data in "resolve()" which we want to update with a specific time limit. 
+
+then below we have call that promise using ".then()" which takes a callback function & we assign & update our data in that "promiseName.then" function & print the final result.
+
+===========================================================================================================
