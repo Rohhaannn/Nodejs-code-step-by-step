@@ -173,3 +173,37 @@ This is the standard way to handle drawbacks of Asynchronous Programming, we hav
 then below we have call that promise using ".then()" which takes a callback function & we assign & update our data in that "promiseName.then" function & print the final result.
 
 ===========================================================================================================
+
+video 17 How Node js Works
+
+//call stack
+
+console.log('starting up');
+
+//goes to node api stack
+setTimeout(()=>{
+  console.log('2 second log');
+},2000);
+
+//goes to node api stack
+setTimeout(()=>{
+  console.log('0 second log');
+},0);
+
+//call stack
+console.log('finishing up');
+
+/*
+
+output of this program will be
+starting up
+finishing up
+0 second log
+2 second log
+
+even our second timeout fun has 0 second of delay still its running after  2nd console.log. why ?
+
+=> we know that nodejs has written in c, Cpp, & javaScript and bcz setTimeout() is inherited from cpp it will go to the Node API's queue not in Call Stack. And the functions get stored into node api's queue will going to run after main call stack. if the main call stack is empty means main() from the main call stack has finished till the time function stored in node api's will wait in callback queue
+
+===========================================================================================================
+
