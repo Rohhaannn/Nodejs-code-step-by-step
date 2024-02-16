@@ -10,88 +10,80 @@ const app = express();
 //   }
 // });
 
-//creating Simple Home page
-app.get('',(req, res)=>{
+//creating Home page
+app.get('/', (req, res)=>{
   res.send(`
+  <a href=""> Home </a> || 
+  <a href="/about"> About </a> || 
+  <a href="/help"> Help </a> || 
+  <a href="/other"> Other </a>
 
-  <a href="">Home</a>
-  <a href="/about">About</a>
-  <a href="/help">Help</a>
-  <a href="/other">other</a>
+    <br>
+    <h1>Welcome, to Home Page</h1>
+    <textarea rows="7" cols="50"/>
+  `);
+})
 
-  <br>
-  <h1>Welcome, to Home Page</h1>
-  <textarea placeholder="please enter your text here" rows="10" cols="65"> </textarea>
+// Creating about page: Another page for rendering html data
+app.get('/about', (req, res)=>{
+  res.send(`
+  <a href="/"> Home </a> || 
+  <a href="/about"> About </a> || 
+  <a href="/help"> Help </a> || 
+  <a href="/other"> Other </a>
+
+    <h1> Welcome to About Page </h1>
+    <br>
+    <input type="text" placeholder="Username" value="${req.query.name}"/>
+    <button> Click Me </button>
   
   `);
 })
 
-//creating about page- Rendering HTML data
-app.get('/about',(req, res)=>{
-  res.send(`
-      <a href="/">Home</a>
-      <a href="/about">About</a>
-      <a href="/help">Help</a>
-      <a href="/other">other</a>
-    
-    <h1>Welcome, About US</h1>
-    <br>
-    <input type="text" placeholder="User name" value="${req.query.name}" />
-    <button> Click Me </button>
-  `);
-})
-
-//creating help page - Rendering JSON data
+// Creating Help page : Another page for redering json data
 app.get('/help',(req, res)=>{
   res.send(`
-  
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/help">Help</a>
-    <a href="/other">other</a>
-    <br>
-    <br>
-    
+    <a href="/"> Home </a> || 
+    <a href="/about"> About </a> || 
+    <a href="/help"> Help </a> || 
+    <a href="/other"> Other </a>
+
+    <br><br>
     {
-      name: 'Ronak',
-      email: 'ronak@test.com'
+      name:'Ronak✨',
+      email:'ronak@gmail.com'
     }
-    
   `);
 })
 
-//creating other page - Rendering multiple objects (JSON data) by creating an array
+// Creating Help page : Another page for redering multiple json data
 app.get('/other',(req, res)=>{
   res.send(`
+    <a href="/"> Home </a> || 
+    <a href="/about"> About </a> || 
+    <a href="/help"> Help </a> || 
+    <a href="/other"> Other </a>
 
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/help">Help</a>
-    <a href="/other">other</a>
-    <br>
-    <br>
-  ,[
+    <br><br>
+    [
       {
-        name: 'Ronak',
-        email: 'ronak@test.com'
+        name:'Rohan',
+        email:'rohan@gmail.com'
       },
       {
-        name: 'Stuti',
-        email: 'Stuti@gmail.com'
+        name:'stueart',
+        email:'stueart@gmail.com'
       },
       {
-        name: 'Anirban',
-        email: 'Anirban@test.com'
+        name:'Johnanson',
+        email:'Johnanson@gmail.com'
       },
       {
-        name: 'Raman',
-        email: 'Raman@test.com'
+        name:'Berry',
+        email:'berry@gmail.com'
       },
-      {
-        name: 'Dimple',
-        email: 'Dimple@test.com'
-      }
-  ]`);
+    ]
+  `);
 })
 
 app.listen(8080);
