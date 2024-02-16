@@ -2,24 +2,22 @@ const express = require('express');
 const path = require('path');
 
 const app = express();
-const publicPath = path.join(__dirname, 'public')
-// console.log(publicPath);
+const publicPath = path.join(__dirname, "public");
 
-app.use(express.static(publicPath))
+app.use(express.static(publicPath));
 
-app.listen(5000);
+app.listen(4500);
 
-/*
+/* Interview Questions :
 
-Interview Question
+what is the use of Path Module?
+=> it helps access folder within project
 
-Q.What is the use of path module ?
-Ans: It helps to access your folder within a project
+what is the use of static method ?
+=> It loads static pages or static content
 
-Q.What is the use of static method ?
-Ans: load static content of the page
 
-Q.can you directly apply css to the html files which is in the public folder ?
-Ans: No.
+can you directly apply css to the html files which is in the html folder ?
+=> No. bcz our path comes through nodejs file that why it canno get applied directly
 
 */
