@@ -219,3 +219,17 @@ Q. In this situation, can you directly apply external css to the html files if c
 => No. bcz our path comes through nodejs file that why it cannot get applied directly
 
 ===========================================================================================================
+
+video: 22 Remove extension from URL and 404 Page
+
+Q. what is 404 page ? how do we make them ?
+=> 404 page is an error page or special kind of page when user enters a page to access which not exist at that time this page will showed up containing text "Error 404: Page not Found"
+
+Q. how to remove extensions from URL's to access / while accessing a web page ? OR
+Q. Q. How to remove extensions from URL ?
+=> res.sendFile(`${publicPath}/help.html`);
+
+Q. How do you load a file in Get method
+=> using sendFile()
+
+===========================================================================================================
