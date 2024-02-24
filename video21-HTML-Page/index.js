@@ -17,7 +17,7 @@ what is the use of static method ?
 => It loads static pages or static content
 
 
-can you directly apply css to the html files which is in the html folder ?
-=> No. bcz our path comes through nodejs file that why it canno get applied directly
+In this situation, can you directly apply external css to the html files if css & html files both present in the same folder ?
+=> No. bcz our path comes through nodejs file that why it cannot get applied directly
 
 */

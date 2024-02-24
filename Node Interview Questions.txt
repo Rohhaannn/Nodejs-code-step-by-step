@@ -207,15 +207,15 @@ even our second timeout fun has 0 second of delay still its running after  2nd c
 
 ===========================================================================================================
 
-Video 12: Make HTML package
+Video 21: Make HTML package
 
-what is the use of Path Module?
+Q. what is the use of Path Module?
 => it helps access folder within project
 
-what is the use of static method ?
+Q. what is the use of static method ?
 => It loads static pages or static content
 
-can you directly apply css to the html files which is in the html folder ?
+Q. In this situation, can you directly apply external css to the html files if css & html files both present in the same folder ?
 => No. bcz our path comes through nodejs file that why it cannot get applied directly
 
 ===========================================================================================================
