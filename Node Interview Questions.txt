@@ -231,5 +231,5 @@ Q. Q. How to remove extensions from URL ?
 
 Q. How do you load a file in Get method
 => using sendFile()
-
+ 
 ===========================================================================================================
