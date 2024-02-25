@@ -6,29 +6,20 @@ const publicPath = path.join(__dirname, "public");
 
 app.set("view engine", "ejs");
 
-app.get("", (_, res) => {
-  res.sendFile(`${publicPath}/home.html`);
+
+app.get("/profile", (_, resp) => {
+  const user = { //this the way we can pass the data dynamically
+    name:'Ronak Sharma',
+    email:'ronak@gmail.com',
+    country:'India',
+    skills:['JavaScript', 'React', 'Node']
+  }
+  resp.render(`profile`, {user});
 });
 
-app.get("/profile", (_, res) => {
-  const user = {
-    name: "Ronak Sharma",
-    email: "ronak@gmail.com",
-    country: "India",
-    skills: ['php','js','React']
-  };
-  res.render(`profile`, { user });
-});
-
-app.get("/login", (_, res) => {
-  res.render(`login`);
-});
-
-app.listen(8080);
-
-/* Interview Questions:
+app.get('/login', (_, resp) => {
+  resp.render('login');
+})
 
 
-
-
-*/
+app.listen(4500);
