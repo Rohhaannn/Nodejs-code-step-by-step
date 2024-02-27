@@ -233,3 +233,21 @@ Q. How do you load a file in Get method
 => using sendFile()
  
 ===========================================================================================================
+
+Video 25 Express js Middleware
+
+Q. what are middleware ?
+=> these are functions, used with routes, using which we can access the request & response and can modify them if required for authentication purpose.
+
+Q. how to make middelware ?
+
+Q. How to apply middleware on routes ?
+
+Q. Types of middleware ?
+=> Application-level middleware (we have used above)
+Router-level middleware
+Error-handling middleware
+Built-in middleware
+Third-party middleware
+
+===========================================================================================================
