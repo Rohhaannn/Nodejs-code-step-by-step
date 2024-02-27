@@ -251,3 +251,25 @@ Built-in middleware
 Third-party middleware
 
 ===========================================================================================================
+
+Video 26 : Route Level middleware
+
+Application-level Middleware gets applied on every page
+Route-level Middleware gets applied on specific router or page
+
+
+Route-level Middleware - Interview Questions:
+
+Q. what is Application-level route ?
+Ans: Middleware which gets applied on whole app/all pages automatically (by-default)
+
+Q. What is Route-level Middleware ?
+Ans: Middleware which gets applies on single or multiple routes.
+
+Q. difference app-leve mdlw / route-level mdlw ?
+Ans: App-level middleware gets applied globally where route-level middleware can be applied on single or multiple routes/pages
+
+Q. How to apply middleware on single route ?
+Q. How to create middleware in different file ?
+
+===========================================================================================================
