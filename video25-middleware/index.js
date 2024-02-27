@@ -1,39 +1,51 @@
 const express = require('express');
 const app = express();
 
-//middleware in same file (Application-level Middleware)
-const reqFilter = (req, res, next)=>{
-  // console.log('reqFilter');
-  if (!req.query.age){
-    res.send("<h1> Please provide your age! </h1>")
-  } else if (req.query.age < 18){
-    res.send(" <h1> 'users < 18' cannot access this page! </h1> ")
+//Middleware code in same file (Application level)
+const reqFilter = (req, res, next) => {
+  //console.log("reqFilter"); // for this to print on console middleware code has to be written before routes always
+  //next(); //without this browser window will keeps on loding
+
+  if (!req.query.age) {
+    res.send('<h1> Please provid age : </h1>')
+  } else if (req.query.age < 18) {
+    res.send(" <h1> 'users < 18' cannot access this page!! </h1>")
   } else {
     next();
   }
+  
 }
-
 app.use(reqFilter);
 
-
-//pages - routes (Application-level Routes)
-app.get('/',(req, res)=>{
-  res.send(' <h1> Welcome to home page </h1> ')
-})
-app.get('/users',(req, res)=>{
-  res.send(' <h1> This is users page </h1> ')
+//normal routes
+app.get("/",(req, res)=>{
+  res.send('<h1> Welcome to Home page </h1>');
 })
 
-app.listen(8080);
+app.get("/users",(req, res)=>{
+  res.send('<h1> This is Users Page </h1>');
+})
+
+
+app.listen(5500);
+
 
 /* Interview Questions:
 
-Q. What is middleware ?
-Ans: When we have to filter the responses or Autheticate the responses that time we have to apply middleware.
+Video 25 Express js Middleware
 
-Q. How to make middleware ?
+Q. what are middleware ?
+=> these are functions, used with routes, using which we can access the request & response and can modify them if required for authentication purpose.
+
+Q. how to make middelware ?
+
 Q. How to apply middleware on routes ?
-Q. Types of middleware ?
 
+Q. Types of middleware ?
+=> Application-level middleware (we have used above)
+Router-level middleware
+Error-handling middleware
+Built-in middleware
+Third-party middleware
 
 */
