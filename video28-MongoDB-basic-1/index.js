@@ -44,8 +44,9 @@ admin>
 ==================================================================
 
 //Interview Questions:
+Q. how do oyu setup mongoDb environment ?
+Q. tell me GUI tool
 Q. what is MongoDB ?
 Q. what is difference between SQL & MongoDB ?
-
 
 */
