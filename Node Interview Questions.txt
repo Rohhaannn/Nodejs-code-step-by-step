@@ -273,3 +273,12 @@ Q. How to apply middleware on single route ?
 Q. How to create middleware in different file ?
 
 ===========================================================================================================
+
+Video 27 MngoDB Installation
+
+Q. How do you setup environment for mondoDB ?
+
+Q. State a GUI name for MongoDB ? 
+Ans: MongoDb Compass
+
+===========================================================================================================
