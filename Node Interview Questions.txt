@@ -273,3 +273,13 @@ Q. How to apply middleware on single route ?
 Q. How to create middleware in different file ?
 
 ===========================================================================================================
+
+Video 27 MongoDB installation
+
+Q. How do oyu setup mongoDb environment ?
+Q. tell me GUI tool
+Q. what is MongoDB ?
+Q. what is difference between SQL & MongoDB ?
+
+
+===========================================================================================================
