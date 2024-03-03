@@ -282,3 +282,15 @@ Q. State a GUI name for MongoDB ?
 Ans: MongoDb Compass
 
 ===========================================================================================================
+
+Video 28 MngoDB Basic Commands
+
+Q. what is MongoDB ?
+=> MongoDB is a noSQL database
+=> The data stored in a collection
+=> Collection don't have row & columns
+=> Data is sorted in the form of object.
+
+Q. what is difference between SQL & MongoDB ?
+
+===========================================================================================================
