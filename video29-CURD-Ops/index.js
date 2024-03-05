@@ -90,9 +90,13 @@ Q. what CRUD operations ?
 => Create, Read, Update & delete
 
 Q. How to insert data into db & what is the command for insert ?
-Q. How to update data into db & what is the command for update ?
-Q. How to delete data into db & what is the command for delete ?
+=> e-comm> db.products.insertOne({name:"M-40", brand:"samsung", price:3500, category:"mobile"})
 
+Q. How to update data into db & what is the command for update ?
+=> e-comm> db.products.updateOne({name:'U10'},{$set:{brand:'Oppo'}})
+
+Q. How to delete data into db & what is the command for delete ?
+=> e-comm> db.products.deleteOne({brand:"apple"})
 
 */
 
