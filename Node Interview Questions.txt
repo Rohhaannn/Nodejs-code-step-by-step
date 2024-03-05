@@ -310,3 +310,11 @@ Q. How to delete data into db & what is the command for delete ?
 => e-comm> db.products.deleteOne({brand:"apple"})
 
 ===========================================================================================================
+
+
+Video 30:  Interview Question
+
+Q. Can we connect multiple database like this ?
+Ans: YES. Create same connection with databse name & Collection name and you are done
+
+===========================================================================================================
