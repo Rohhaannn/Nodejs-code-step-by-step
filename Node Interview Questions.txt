@@ -318,3 +318,29 @@ Q. Can we connect multiple database like this ?
 Ans: YES. Create same connection with databse name & Collection name and you are done
 
 ===========================================================================================================
+video 31: Reding the data from MongoDB
+
+while reading the data , how to apply where condition ?
+=> resp.find({name:'IPhone'}).toArray().then((data) => {
+
+  name:'IPhone'
+
+===========================================================================================================
+
+video 32 : Insert Data Into MongoDB
+
+How to insert multiple records ?
+=> 
+  const result = db.insertMany(
+    [
+      {name:'note 5', brand:'vivo', price:5700, category:'mobile'},
+      {name:'bluberry', brand:'oppo', price:4560, category:'tab'},
+      {name:'Iphone 12', brand:'apple', price:78954, category:'mobile'},
+    ]
+  )
+  
+===========================================================================================================
+
+
+
+
