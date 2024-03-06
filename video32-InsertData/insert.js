@@ -20,3 +20,15 @@ const insert = async () => {
 }
 
 insert();
+
+/*
+Intrview questions - video 32
+How to insert multiple records ?
+
+video 31: 
+while reading the data , how to apply where condition ?
+=> resp.find({name:'IPhone'}).toArray().then((data) => {
+
+  name:'IPhone'
+
+*/
