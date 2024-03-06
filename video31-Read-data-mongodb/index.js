@@ -1,21 +1,27 @@
-const dbConnect = require('./mongodb')
+const { MongoClient } = require('mongodb');
 
-// to handle promise
-// dbConnect().then((resp)=>{
-//   resp.find().toArray().then((data)=>{
-//     console.warn(data)
+const url = "mongodb://localhost:27017";
+const database = "e-comm"
+const client = new MongoClient(url);
+
+async function dbConnect() {
+  let result = await client.connect();
+  let db = result.db(database);
+  return db.collection("products");
+}
+
+//1st method
+// dbConnect().then((resp) => {
+//   resp.find({name:'U10'}).toArray().then((data)=>{
+//     console.log(data)
 //   })
 // })
 
-//console.warn(dbConnect());
-
-
-//recommended
-const main = async ()=> {
-  // console.log("main function called");
+//2nd Method
+const main = async () => {
   let data = await dbConnect();
   data = await data.find().toArray();
-  console.warn(data);
+  console.log(data)
 }
 
 main();
