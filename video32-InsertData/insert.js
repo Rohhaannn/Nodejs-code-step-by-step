@@ -9,7 +9,7 @@ const insert = async () => {
   // )
 
   //insert Many records
-  const result = db.insertMany(
+  const result = await db.insertMany(
     [
       {name:'Note-5', brand:'Vivo', price:5695, category:'Mobile'},
       {name:'M-80', brand:'Vsamsung', price:8797, category:'Tab'},
