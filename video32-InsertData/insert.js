@@ -4,7 +4,7 @@ const insert = async () => {
   const db= await dbConnect();
   
   //insert one record
-  // const result = db.insertOne(
+  // const result = await db.insertOne(
   //   {name:'Note-5', brand:'Vivo', price:5695, category:'Mobile'}
   // )
 
@@ -17,6 +17,10 @@ const insert = async () => {
       {name:'Iphone Max Pro', brand:'apple', price:89784, category:'IPad'},
     ]
   )
+
+  if(result.acknowledged) {
+    console.log("Data Inserted")
+  }
 }
 
 insert();
