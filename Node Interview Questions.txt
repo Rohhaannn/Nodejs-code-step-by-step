@@ -341,13 +341,19 @@ How to insert multiple records ?
   
 ===========================================================================================================
 
-Video 33:Update Data in MongoDB
+Video 33: Update Data in MongoDB
 
 Q. When you write updateOne then which record will get updated ?
 => Based on the condition, whichever record from the start will match the condition that record will get updated
 
 ===========================================================================================================
 
+Video 34: Delete Data in MongoDB
+
+Q. Suppose, you deleting a data which is not present in the database, then how will you know that that has been deleted or it was never there ?
+=> we can identify that on the label named deletedCount. if data was never there it will show 0 (zero), and if it has been deleted it will show the exact count
+
+===========================================================================================================
 
 
 
