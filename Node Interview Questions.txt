@@ -341,6 +341,13 @@ How to insert multiple records ?
   
 ===========================================================================================================
 
+Video 33:Update Data in MongoDB
+
+Q. When you write updateOne then which record will get updated ?
+=> Based on the condition, whichever record from the start will match the condition that record will get updated
+
+===========================================================================================================
+
 
 
 
