@@ -354,6 +354,24 @@ Q. Suppose, you deleting a data which is not present in the database, then how w
 => we can identify that on the label named deletedCount. if data was never there it will show 0 (zero), and if it has been deleted it will show the exact count
 
 ===========================================================================================================
+Video 35 basic get api
+
+Q. Can you pass body in get method ?
+=> No
+
+===========================================================================================================
+
+Video 36 Post API
+
+Q. Why didnt we use body-parser ?
+=> After 4.6 version of Express we have use "express.json()" to convert the data into Json format
+
+Q. How do you get the body through req ?
+=> body-parser => okay (bcz it was used before 4.6 version of express)
+=> express.json() (used after 4.6 version of express)
+if we hae written "express.json()" then we cannot use "req.body" in our code
+
+===========================================================================================================
 
 
 
